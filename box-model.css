@@ -1,4 +1,5 @@
-/* Global styling */
+/* GLOBAL STYLING - CSS RESET */
+
 * {
    /* box-sizing: border-box;
    -webkit-box-sizing: border-box;
@@ -6,8 +7,8 @@
    font-family: 'Montserrat', sans-serif;
 }
 
-/* ELEMENT Selector styling */
-/* body, */
+/* ELEMENT SELECTOR STYLING */
+
 html {
    margin: 0;
 }
@@ -42,7 +43,7 @@ h5 {
    font-size: 20px;
 }
 h3 {
-   padding-top: 15px; /* match to 'main' element selector */
+   padding-top: 15px;
 }
 section {
    position: relative;
@@ -72,7 +73,6 @@ p {
         margin: 0; */
    height: 75vh;
 }
-
 .basic-box {
    width: 100px;
    height: 100px;
@@ -86,7 +86,6 @@ p {
    /* margin: auto; */
    /* margin-bottom: 20px; */
 }
-
 #box-two {
    /* box-sizing: border-box; */
    background-color: rgba(144, 231, 86, 0.45);
@@ -95,141 +94,46 @@ p {
    margin-top: 40px; */
 }
 
+/* BEGIN POSITION-SECTION STYLING */
+
 .box {
-   /* width: auto;
-   height: auto; */
+   /* width: auto; CHECK
+   height: auto; CHECK*/
    /* margin: 10px;
    padding: 15px; */
-   /* border: whitesmoke solid 3px; */
+   border: whitesmoke solid 3px;
 }
-
-#content-demo {
-   background-color: rgba(72, 179, 255, 0.7);
-   /* padding: 0; */
-   /* margin: 0; */
-   /* border-color:rgba(255, 0, 208, 0.615); */
-   /* border: none; */
-   /* visibility: hidden; */
-}
-.example-selector {
-   /* box-sizing: content-box;*/ /* default */
-   /* TODO: look up block element */
-   box-sizing: border-box;
-   width: 5px;
-   min-width: 5px;
-   max-width: 5px;
-   height: 5px;
-   min-height: 5px;
-   max-height: 5px;
-}
-
-#padding-demo {
-   background-color: rgba(144, 231, 86, 0.7);
-   border: rgb(83, 128, 156) dashed 3px;
-   /* padding: 0; */
-   /* margin: 0; */
-   /* border-color:rgba(255, 0, 208, 0.615); */
-   /* border: none; */
-   /* visibility: hidden; */
-}
-.example-selector {
-   padding-top: 5px;
-   padding-right: 5px;
-   padding-bottom: 5px;
-   padding-left: 5px;
-   padding: 5px 5px 5px 5px;
-   padding: 5px;
-}
-
-#border-demo {
-   background-color: rgba(241, 197, 94, 0.663);
-   border: rgb(83, 128, 156) groove 7px;
-   /* padding: 0;
-        margin: 0;
-        border-color:rgba(255, 0, 208, 0.615); */
-   /* border: none; */
-   /* visibility: hidden; */
-}
-.example-selector {
-   /* padding-top: 5px;
-                padding-right: 5px;
-                padding-bottom: 5px;
-                padding-left: 5px;
-                padding: 5px 5px 5px 5px;
-                padding: 5px; */
-}
-
-#margin-demo {
-   background-color: rgba(205, 136, 79, 0.7);
-   border: rgb(18, 28, 34) dotted 4px;
-   /* padding: 0; */
-   /* margin: 0; */
-   /* border-color:rgba(255, 0, 208, 0.615); */
-   /* border: none; */
-}
-.example-selector {
-   /* padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding: 5px 5px 5px 5px;
-    padding: 5px; */
-}
-#position-demo {
-   color: white;
-   border-color: white;
-   padding: 0 0 5 0;
-   margin: 0;
-   font-size: 12px;
-}
-.example-selector {
-   /* padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding: 5px 5px 5px 5px;
-    padding: 5px; */
-}
-
-/* CSS Position Property */
 .position-sec {
    position: static;
    z-index: 0;
 }
-/*****  POSITION DEMO *****/
+
+/***** POSITION DEMO *****/
 #position1 {
    background-color: rgba(0, 255, 98, 0.582);
-   /* position: static;  */
-   /* CSS position property default */
-   z-index: 2; /* z-index only works on a positioned box (exception: static) */
+   /* position: static; /** CSS position property default */
+   z-index: 2; /** z-index only works on a positioned box (exception: static) */
 }
 #position2 {
    background-color: rgba(255, 187, 0, 0.512);
-   /* position: relative;  */
-   /* makes itself relative to the previously positioned element/div other boxes */
+   /* position: relative; /** makes itself relative to the previously positioned element/div other boxes */
 }
 #position3 {
    background-color: rgba(0, 149, 255, 0.615);
-   /* position: fixed; */
-   /* removes itself from relativity of other boxes & maintains it's place in the z-index */
-   right: 20px;
-   /* 30px from the right side of the screen/viewport */
-   bottom: 40px;
-   /* 25px from the bottom side of the screen/viewport */
-   z-index: 1;
-   /* display: none; */
+   /* position: fixed; /** removes itself from relativity of other boxes & maintains it's place in the z-index */
+   right: 20px; /* 30px from the right side of the screen/viewport */
+   bottom: 40px; /* 25px from the bottom side of the screen/viewport */
+   z-index: 1; /* display: none; */
 }
 #position4 {
    background-color: rgba(255, 94, 0, 0.615);
-   /* position: relative;  */
-   /* makes itself relative to the sibling element/div other boxes */
+   /* position: relative;  /** makes itself relative to the sibling element/div other boxes */
    left: 75px; /* 150px from the left side */
    bottom: -20px;
 }
 #position5 {
    background-color: rgba(255, 0, 208, 0.615);
-   /* position: absolute;  */
-   /* removes itself from relativity of other boxes & maintains the most frontal z-index position */
+   /* position: absolute;  /** removes itself from relativity of other boxes & maintains the most frontal z-index position */
    right: 45px; /* 100px from the right side */
    bottom: 107px; /* 50px from the bottom of the last positioned parent element */
    white-space: nowrap;
@@ -239,9 +143,9 @@ p {
         position: sticky;
         top: 50%;
     } */
-/*end*/
 
-/* Notes */
+/* BEGIN NOTES SECTION STYLING */
+
 #notes-sec {
    margin-top: 10px;
    z-index: 0;
