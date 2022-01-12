@@ -140,7 +140,7 @@ p {
 }
 #position6 {
    background-color: rgba(255, 242, 0, 0.582);
-   position: sticky;
+   position: sticky; /* can you get the box to stick? */
    top: 0;
 }
 
@@ -151,4 +151,5 @@ p {
    z-index: 0;
 }
 #notes-div {
+   font-size: 12px;
 }
